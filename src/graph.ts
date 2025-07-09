@@ -33,19 +33,6 @@ export const createGraph = () => {
   return graph;
 };
 
-const main = async () => {
-  const graph = createGraph().compile();
-  const result = await graph.invoke({
-    messages: [
-      // new HumanMessage("სად ჯანდაბიდან მოვიწვიო იუზერი?"),
-      new HumanMessage("პრობლემა მაქვს ვორქსფეისის შემნქზე. შექმენი თიქეთი."),
-    ],
-  });
-  console.log(result);
-};
-
-main();
-
 // const image = await (await graph.getGraphAsync()).drawMermaidPng();
 // const arrayBuffer = await image.arrayBuffer();
 // fs.writeFileSync("image.png", Buffer.from(arrayBuffer));

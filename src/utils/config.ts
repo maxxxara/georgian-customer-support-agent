@@ -1,4 +1,3 @@
-import { OpenAIEmbeddings } from "@langchain/openai";
 import {
   GoogleGenerativeAIEmbeddings,
   ChatGoogleGenerativeAI,
@@ -9,10 +8,6 @@ import { MongoClient } from "mongodb";
 const MONGODB_ATLAS_URI = process.env.MONGODB_ATLAS_URI;
 const MONGODB_ATLAS_DB_NAME = process.env.MONGODB_ATLAS_DB_NAME;
 const MONGODB_ATLAS_COLLECTION_NAME = "general_data";
-
-// export const embeddingModel = new OpenAIEmbeddings({
-//   model: "text-embedding-3-large"
-// });
 
 export const create_embedding_model = () => {
   return new GoogleGenerativeAIEmbeddings({

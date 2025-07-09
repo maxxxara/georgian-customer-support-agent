@@ -21,7 +21,6 @@
     "@langchain/google-genai": "^0.2.14",
     "@langchain/langgraph": "^0.3.7",
     "@langchain/mongodb": "^0.1.0",
-    "@langchain/openai": "^0.5.18",
     "dotenv": "^17.1.0",
     "langchain": "^0.3.29",
     "mongodb": "^6.17.0",

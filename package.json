@@ -1,0 +1,30 @@
+{
+  "name": "customer-support-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "bun run src/graph.ts",
+    "embed-docs": "bun run src/scripts/embed_documents.ts",
+    "studio": "npx @langchain/langgraph-cli@0.0.30 dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.0.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.62",
+    "@langchain/google-genai": "^0.2.14",
+    "@langchain/langgraph": "^0.3.7",
+    "@langchain/mongodb": "^0.1.0",
+    "@langchain/openai": "^0.5.18",
+    "dotenv": "^17.1.0",
+    "langchain": "^0.3.29",
+    "mongodb": "^6.17.0",
+    "zod": "^3.25.76"
+  }
+}
